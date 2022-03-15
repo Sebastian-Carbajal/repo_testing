@@ -130,8 +130,8 @@ footer {
    width: 10%;
    max-height: 4em;
    max-width: 4em;
-   
    /* Transform */
+   transform: translate(1px, 1px);
 }
 
 a.footer__page {
@@ -342,9 +342,19 @@ form input {
 }
 
 select.genero {
-   background-color: rgba(255, 0, 0, .6);
+   color: #FFFFFF;
+   /* Cambios de estilo para animaciones */
+   background: linear-gradient(to bottom, #38383F, #555555);
+   /*Fin de cambios de estilo para animaciones*/
+}
+
+select.genero:hover {
+   /* Cambios de estilo para animaciones */
+   background: linear-gradient(to top, #e73827, #f85032);
+   /*Fin de cambios de estilo para animaciones*/
    color: #FFFFFF;
 }
+
 
 .genero option {
    background-color: #EE0000;
@@ -361,20 +371,40 @@ fieldset form textarea {
    display: flex;
 }
 
-.reset:hover {
-   color: #FFFFFF;
-   background-color: #38383F;
+* Cambios de estilo para animaciones */
+.reset {
+   background: linear-gradient(to bottom, rgba(238,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(217,0,0,1) 51%, rgba(0,0,0,1) 100%);
 }
 
-.submit:hover {
+.reset:hover {
+   background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(238,0,0,1) 0%, rgba(255,0,0,1) 25%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 75%, rgba(255,0,0,1) 100%);
    color: #FFFFFF;
-   background-color: #38383F;
 }
+
+.submit {
+      background: linear-gradient(to bottom, rgba(238,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(217,0,0,1) 51%, rgba(0,0,0,1) 100%);
+}
+.submit:hover {
+   background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(238,0,0,1) 0%, rgba(255,0,0,1) 25%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 75%, rgba(255,0,0,1) 100%);
+   color: #FFFFFF;
+}
+
+/* Fin de cambios de estilo para animaciones */
+
 
 select#piloto {
-   background-color: rgba(255, 0, 0, .6);
+   /* Cambios de estilo para animaciones */
+   background: linear-gradient(to bottom, #38383F, #555555);
+     /*Fin de cambios de estilo para animaciones*/
    color: #FFFFFF;
-}
+   }
+
+   select#piloto:hover {
+   /* Cambios de estilo para animaciones */
+   background: linear-gradient(to top, #e73827, #f85032);
+   /*Fin de cambios de estilo para animaciones*/
+   color: #FFFFFF;
+   }
 
 #piloto option {
    background-color: #EE0000;
@@ -385,6 +415,12 @@ fieldset legend {
    color: #FFFFFF;
    background-color: #38383F;
 }
+
+/* Cambios de estilo para hacer animaciones */
+   fieldset legend:hover {
+   transform: scale(1.1);
+   }
+/*Fin de cambios de estilo para animaciones*/
 
    fieldset form label {
       color: #FFFFFF;
